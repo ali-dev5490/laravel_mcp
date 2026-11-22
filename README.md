@@ -125,6 +125,8 @@ Prompts embed the current database row. They do not send email or change statuse
 
 Requirements: PHP 8.3 or 8.4 with `mbstring`, `xml`, `curl`, `sqlite`, `zip`, `bcmath`, and `intl`, plus Composer. Node is only required for MCP Inspector. The home page does not need a frontend build.
 
+`composer.json` pins the Composer platform to PHP 8.3.27, so `composer update` keeps a lock file that installs on both 8.3 and 8.4. Symfony 8 requires PHP 8.4, and this app stays on the Symfony 7 line Laravel 12 also accepts.
+
 ```bash
 git clone https://github.com/ali-dev5490/laravel_mcp.git
 cd laravel_mcp
