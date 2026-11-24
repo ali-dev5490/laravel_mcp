@@ -348,7 +348,7 @@ MIT. See [LICENSE](LICENSE).
 
 Built as a portfolio piece by a senior Laravel engineer (9+ years) who ships Laravel, Vue, and Livewire products and wires them to OpenAI and MCP clients.
 
-- Name: [Your name]
+- Name: Mubashar Ali
 - Upwork: [Your Upwork profile URL]
 - Email: [you@example.com]
-- GitHub: [your GitHub URL]
+- GitHub: https://github.com/ali-dev5490
