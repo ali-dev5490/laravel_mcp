@@ -4,6 +4,20 @@ The [Model Context Protocol](https://modelcontextprotocol.io) lets an AI client 
 
 It is a portfolio piece for MCP, AI integration, and SaaS work: a small domain with authorization, two transports, and tests, rather than a single hard-coded tool.
 
+## Demo
+
+MCP Inspector walkthrough against the seeded Harborboard stdio server (~85 seconds): search listings, pipeline summary, create a lead, preview then confirm an order (`HB-1-0002`), read the qualification playbook, and fetch the `qualify-lead` prompt. Full MP4 and captions live under [`docs/demo/`](docs/demo/).
+
+![Harborboard MCP Inspector walkthrough](docs/demo/inspector-walkthrough.gif)
+
+| Search listings | Pipeline summary |
+| --- | --- |
+| ![search-listings](docs/demo/01-search-listings.png) | ![pipeline-summary](docs/demo/02-pipeline-summary.png) |
+
+| Create lead (Riley Chen) | Place order confirm (`HB-1-0002`) |
+| --- | --- |
+| ![create-lead](docs/demo/03-create-lead.png) | ![place-order](docs/demo/04-place-order-confirm.png) |
+
 ## Package choice
 
 This app uses [laravel/mcp](https://packagist.org/packages/laravel/mcp) **1.2.1** (constraint `^1.2`), the official Laravel package. It is stable, it requires Laravel `12.41.1` or `13`, and the [framework docs](https://laravel.com/docs/12.x/mcp) describe its tools, resources, prompts, stdio server, and streamable HTTP server. The app itself is Laravel **12.73** on PHP **8.3+** (developed and tested on 8.4).
@@ -209,6 +223,8 @@ For the HTTP transport, run `php artisan serve`, mint a token, and point Cursor 
 ```
 
 ## MCP Inspector
+
+A recorded stdio session is in the [Demo](#demo) section and under [`docs/demo/`](docs/demo/).
 
 Stdio, which is the same command Claude and Cursor run:
 
